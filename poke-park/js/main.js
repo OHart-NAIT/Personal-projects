@@ -2,15 +2,14 @@ let pokemonTeamArray = []
 
 let pokemonCardDisplay = document.querySelector(".pokemon-display")
 
-// In your Pokemon card generation code, add the primary type as a class
-    function getPrimaryType(pokemon) {
-        return pokemon.type[0].toLowerCase(); // Get the first type
-    }
+// In your Pokemon card generation code, add the primary type as a class - to change card colour 
+const getPrimaryType = (pokemon) => {
+  return pokemon.type[0].toLowerCase(); // Get the first type
+}
 
 // Render Pokemon
 const renderPokemon = () => {
   
-
   pokemonCardDisplay.innerHTML = ""
   // Look through API for info
 
