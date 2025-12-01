@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Oliver Hart">
+
+    <title>Poke-Park</title>
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+     
+    <!-- Scripts -->
+    <script src="js/main.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="inner-container">
+            <img src="img/pokemon-logo-clipart.png" alt="A clipart image of a pokeball and pokemon logo">
+            <!-- Image take from: https://www.template.net/edit-online/494381/pokemon-logo-clipart -->
+            <h1>Welcome to the Pok&eacute;-Park</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="inner-container">
+            <section class="form-section">
+
+                <h2>Enter your Pok&eacute;mon Member</h2>
+
+                <form id="input-form">
+
+                    <div class="form-row">
+                        <!-- Name -->
+                        <div>
+                            <input name="pokemon-name" type="text" placeholder="Pokemon name" aria-describedby="name-help" required>
+                            <p class="invalid-pokemon hidden" id="name-help" >That pok&eacute;mon does not exist!</p>
+                        </div>
+                        <!-- Level -->
+                        <div>
+                            <input name="pokemon-level" type="number"  placeholder="Pokemon level (0-100)" aria-describedby="level-help" required>
+                            <p class="invalid-level-over hidden" id="level-help" >Pok&eacute;mon cannot be over level 100!</p>
+                            <p class="invalid-level-under hidden" id="level-help" >Pok&eacute;mon cannot be under level 1!</p>
+                        </div>    
+                    </div>
+                    
+                    <div class="form-row">
+                        <!-- Gender -->
+                        <div>
+                            <h3>Select your Pok&eacute;mon's Gender</h3>
+                            <div>
+                                <input type="radio" id="pokemon-female" name="gender" value="female">
+                                <label for="pokemon-female">Female</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="pokemon-male" name="gender" value="male">
+                                <label for="pokemon-male">Male</label>
+                            </div>
+                        </div>
+                        
+                        <!-- Shiny? -->
+                        <div>
+                            <h3>Is your Pok&eacute;mon Shiny?</h3>
+                            <div>
+                                <input type="radio" id="pokemon-shiny" name="shiny" value="yes">
+                                <label for="pokemon-shiny">Yes</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="pokemon-not-shiny" name="shiny" value="no">
+                                <label for="pokemon-not-shiny">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Submit -->
+                    <div>
+                        <!-- <label for="submit">Add Team Member</label> -->
+                        <input type="submit" id="submit" name="submit" value="Add Team Member">
+                    </div>
+
+                </form>
+            </section>
+
+            <!-- Pokemon Display Cards -->
+            <div class="pokemon-display">
+
+            </div>
+
+            <!-- Pokemon Stats -->
+            <section class="stats-section">
+                <h2>Pok&eacute;mon Park Stats</h2>
+                <div class="team-stats hide">
+                    <p>There are currently
+                        <span id="num-pokemon">0</span> pok&eacute;mon in your park.
+                    </p>
+                    <p>Female pok&eacute;mon:
+                        <span id="num-females">0</span>
+                    </p>
+                    <p>Male pok&eacute;mon:
+                        <span id="num-males">0</span>
+                    </p>
+                    <p>Your Shiny count:
+                        <span id="num-shinies">0</span>
+                    </p>
+                    <p>The average level is
+                        <span id="avg-level">0</span>.
+                    </p>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="inner-container">
+            <h2>Links</h2>
+
+            <p><a href="https://www.template.net/edit-online/494381/pokemon-logo-clipart">Logo Image</a></p>
+
+            <p><a href="https://www.vhv.rs/viewpic/TRbTwJh_clean-vector-sparkle-clean-sparkle-clipart-hd-png/">Shiny Sparkle Image</a></p>
+        
+            <p><a href="https://stock.adobe.com/ca/images/watercolour-set-of-female-and-male-gender-symbols-round-shape-traditional-mars-and-venus-icons-hand-drawn-water-color-sketchy-painting-on-white-background-isolated-clip-art-elements-for-design/212981917">Male/Female Symbol Images</a></p>
+
+            <p><a href="https://pokeapi.co/">API link</a></p>
+        
+        </div>
+        
+    </footer>
+</body>
+
+</html>
