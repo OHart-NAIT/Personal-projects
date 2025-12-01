@@ -1,0 +1,347 @@
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background: #f5f5f5;
+}
+
+.inner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #7a5f84, #5369bd);
+    color: #eae6d8;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+header .inner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+}
+
+header img {
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+/* Main Content Styles */
+main {
+    padding: 40px 0;
+}
+
+main h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+
+/* Form Section */
+.form-section {
+    background: #eae6d8;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    max-width: 1200px;
+}
+
+
+/* Fieldset Styles */
+fieldset {
+    border: 2px solid #b7b3b1;
+    border-radius: 8px;
+    padding: 20px;
+    background: #f7f5ef;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #f0effa;
+    background: #5369bd;
+    border-radius: 4px;
+}
+
+/* Make Display Options take 20% and Generation Options take 80% */
+#input-form {
+    display: grid;
+    grid-template-columns: 3fr 2fr; /* 80% / 20% ratio */
+    gap: 20px;
+}
+
+/* Optional: Adjust the Display Options fieldset to fit better */
+fieldset:last-of-type {
+    min-height: auto;
+    justify-content: center;
+}
+
+/* Options Row Layout */
+.options-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+/* Generate X Pokemon - smaller select */
+.options-row > label:first-child {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 5px 0;
+}
+
+/* Smaller select styling */
+.options-row > label:first-child select {
+    padding: 6px 8px;
+    font-size: 0.9em;
+    width: 70px;
+    height: 35px;
+}
+
+fieldset:first-of-type {
+    width: 100%;
+}
+/* Dropdown container for regions and evolution */
+.dropdown-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Each dropdown takes equal space */
+.dropdown-container .dropdown {
+    flex: 1;
+    max-width: 280px;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+.dropdown > button {
+    padding: 10px 15px;
+    background: #b6c1eb;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+.dropdown > button:hover {
+    background: #5369bd;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+    min-width: 250px;
+    width: 100%;
+}
+
+.popup ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.popup label {
+    display: flex;
+    padding: 8px 16px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.popup label:hover {
+    background: #f5f5f5;
+}
+
+.popup input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.popup.show {
+    display: block;
+}
+
+
+#regions .popup ul {
+    columns: 2;
+    column-gap: 20px;
+    padding: 10px;
+}
+
+#regions .popup li {
+    break-inside: avoid;
+    margin-bottom: 5px;
+}
+
+#regions .popup label {
+    padding: 6px 8px;
+    font-size: 0.9em;
+}
+
+#regions .popup {
+    min-width: 200px;
+}
+
+/* Select Styles */
+select {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    margin: 0;
+    background: white;
+    cursor: pointer;
+}
+
+/* Display options select */
+#display {
+    width: 100%;
+}
+
+/* Submit Button - Full width below both columns */
+#input-form > div:last-child {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    padding: 12px 30px;
+    background: #7a5f84;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    min-width: 200px;
+    margin-top: 40px;
+}
+
+input[type="submit"]:hover {
+    background: #9d45a0;
+}
+
+/* Pokemon Display Area - Removed box styling */
+
+.pokemon-display {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pokemon-card {
+    border: 1px solid #5369bd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    background: #eae6d8;;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: calc(33.333% - 0.67rem); 
+    flex: 0 0 calc(33.333% - 0.67rem); 
+}
+
+.pokemon-card img {
+    width: 96px;
+    height: 96px;
+    margin: auto;
+}
+
+.pokemon-card h3 {
+    margin: 0.5rem 0 0 0;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(135deg, #7a5f84, #5369bd);;
+    color: #eae6d8;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+footer h2 {
+    color: #eae6d8;;
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: #b6c1eb;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #eae6d8;
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .options-row > label:first-child {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .options-row > label:first-child select {
+        margin-top: 5px;
+        max-width: 180px; /* Adjust this value as needed */
+    }
+}

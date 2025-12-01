@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Oliver Hart">
+
+    <title>Pok&eacute;mon Generator</title>
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="js/main.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="inner-container">
+            <img src="img/pokemon-logo-clipart.png" alt="A clipart image of a pokeball and pokemon logo">
+            <!-- Image take from: https://www.template.net/edit-online/494381/pokemon-logo-clipart -->
+            <h1>Welcome to the Pok&eacute;mon Generator</h1>
+        </div>
+    </header>
+
+    <main>
+        <h2>Generate your Pok&eacute;mon!</h2>
+        <div class="inner-container">
+            <section class="form-section">
+                <form id="input-form">
+                    <!-- How many pokemon -->
+                    <fieldset>
+                        <legend>Generation Options</legend>
+                        <div class="options-row">
+                            <label>Generate
+                                <select name="number" id="number" required>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6" selected>6</option>
+                                </select> Pok&eacute;mon.
+                            </label>
+
+                            <div class="dropdown-container">
+                                <!-- Regions -->
+                                <div class="dropdown" id="regions">
+                                    <button type="button" data-plural-name="Regions">All Regions</button>
+                                    <div class="popup">
+                                        <ul>
+                                            <li><label><input type="checkbox" value="all" data-select-all="true"
+                                                        checked>Select
+                                                    All</label></li>
+                                            <li><label title="Generation 1 (Red, Blue, and Yellow)"><input
+                                                        type="checkbox" name="regions" value="kanto"
+                                                        checked>Kanto</label></li>
+                                            <li><label title="Generation 2 (Gold, Silver, and Crystal)"><input
+                                                        type="checkbox" name="regions" value="johto"
+                                                        checked>Johto</label>
+                                            </li>
+                                            <li><label title="Generation 3 (Ruby, Sapphire, and Emerald)"><input
+                                                        type="checkbox" name="regions" value="hoenn"
+                                                        checked>Hoenn</label>
+                                            </li>
+                                            <li><label title="Generation 4 (Diamond, Pearl)"><input type="checkbox"
+                                                        name="regions" value="sinnoh" checked>Sinnoh</label></li>
+                                            <li><label title="Generation 4 (Platinum)"><input type="checkbox"
+                                                        name="regions" value="sinnoh_pt" checked>Sinnoh
+                                                    (Platinum)</label></li>
+                                            <li><label title="Generation 5 (Black and White)"><input type="checkbox"
+                                                        name="regions" value="unova" checked>Unova</label></li>
+                                            <li><label title="Generation 5 (Black 2 and White 2)"><input type="checkbox"
+                                                        name="regions" value="unova_b2w2" checked>Unova (B2W2)</label>
+                                            </li>
+                                            <li><label title="Generation 6 (X and Y)"><input type="checkbox"
+                                                        name="regions" value="kalos" checked>Kalos</label></li>
+                                            <li><label title="Generation 7 (Sun and Moon)"><input type="checkbox"
+                                                        name="regions" value="alola" checked>Alola</label></li>
+                                            <li><label title="Generation 7 (Ultra Sun and Ultra Moon)"><input
+                                                        type="checkbox" name="regions" value="alola_usum" checked>Alola
+                                                    (USUM)</label></li>
+                                            <li><label title="Generation 8 (Sword and Shield)"><input type="checkbox"
+                                                        name="regions" value="galar" checked>Galar</label></li>
+                                            <li><label title="Generation 8 (Legends: Arceus)"><input type="checkbox"
+                                                        name="regions" value="hisui" checked>Hisui</label></li>
+                                            <li><label title="Generation 9 (Scarlet and Violet)"><input type="checkbox"
+                                                        name="regions" value="paldea" checked>Paldea</label></li>
+                                            <li><label title="Generation 9 (Scarlet and Violet: Teal Mask)"><input
+                                                        type="checkbox" name="regions" value="kitakami"
+                                                        checked>Kitakami</label>
+                                            </li>
+                                            <li><label title="Generation 9 (Scarlet and Violet: Indigo Disk)"><input
+                                                        type="checkbox" name="regions" value="blueberry"
+                                                        checked>Blueberry
+                                                    Academy</label></li>
+                                            <li><label title="Generation 9 (Legends: Z-A)"><input type="checkbox"
+                                                        name="regions" value="lumiose" checked>Lumiose City</label></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Fully evolved or not -->
+                                <div class="dropdown">
+                                    <button type="button" data-all-name="Fully Evolved or Not">Fully Evolved</button>
+                                    <div class="popup">
+                                        <ul>
+                                            <li><label><input type="checkbox" id="not-fully-evolved"
+                                                        name="not-fully-evolved" value="true" checked>Not
+                                                    Fully Evolved</label></li>
+                                            <li><label><input type="checkbox" id="fully-evolved" name="fully-evolved"
+                                                        value="true" checked>Fully
+                                                    Evolved</label></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Display Options</legend>
+                        <div class="options-row">
+                            <label>Display as:
+                                <select name="display" id="display" required>
+                                    <option value="names">Names Only</option>
+                                    <option value="sprites">Sprites Only</option>
+                                    <option value="both" selected>Names and Sprites</option>
+                                </select>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <!-- Submit -->
+                    <div class="submit-container">
+                        <input type="submit" id="submit" name="submit" value="Generate Pok&eacute;mon">
+                    </div>
+                </form>
+            </section>
+
+            <!-- Pokemon Display Cards -->
+            <div class="pokemon-display">
+                
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="inner-container">
+            <h2>Links</h2>
+            <p><a href="https://www.template.net/edit-online/494381/pokemon-logo-clipart">Logo Image</a></p>
+            <p><a href="https://pokeapi.co/">API link</a></p>
+        </div>
+    </footer>
+</body>
+</html>
