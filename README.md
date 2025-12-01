@@ -1,4 +1,4 @@
-#Welcome to my Personal Projects!
+# Welcome to my Personal Projects!
 
 Welcome to the folder of my personal projects. It's not much, just a growing collection of things I work on occasionally, born mainly out of curiosity and a desire to keep my skills sharp. Each project here is a small sandbox where I try out new ideas, solve problems that interest me, and learn by doing.
 
