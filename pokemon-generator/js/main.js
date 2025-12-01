@@ -269,14 +269,11 @@ const generateRandomPokemon = async () => {
     
     isGenerating = true;
     
-
     // User preferences
     let pokemonCount = getNumberOfPokemon();
     let pokedexURLs = getSelectedRegions();
     let evolutionPrefs = getEvolutionPreferences();
     let displayOptions = getDisplayPrefrences();
-
-    
 
     loadingMessage(displayArea);
 
@@ -360,12 +357,11 @@ const displayPokemon = async (pokemonList, displayOptions, displayArea) => {
 }
 
 
-
-
 // Add event listener to the form submit
 document.querySelector("#input-form").addEventListener('submit', (event) => {
         event.preventDefault();
+
         generateRandomPokemon()
-        // getSelectedRegions();
-        
+
+        isGenerating = true;
 });
