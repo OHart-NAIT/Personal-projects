@@ -1,3 +1,11 @@
+:root {
+    --light-green: #779e7f;
+    --rusty-orange: #b8520a;
+    --pine-green: #445a4d;
+    --dark-green: #2a3b42;
+    --dark-grey: #212226;
+}
+
 .nav-link:hover, .link-hover:hover, .icon-link-hover:hover {
     color: white !important;
 }
