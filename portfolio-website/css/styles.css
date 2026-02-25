@@ -1,9 +1,12 @@
 :root {
     --light-green: #779e7f;
+    --dusty-yellow: #c08b57;
     --rusty-orange: #b8520a;
-    --pine-green: #445a4d;
-    --dark-green: #2a3b42;
+    --pine-green: #3A5A40;
+    --dark-green: #1D2E28;
     --dark-grey: #212226;
+    --dark-purple:#332b36;
+
 }
 
 .nav-link:hover, .link-hover:hover, .icon-link-hover:hover {
@@ -11,27 +14,39 @@
 }
 
 .bg-light-green {
-    color: var(--light-green) !important;
+    background-color: var(--light-green) !important;
+}
+
+.bg-dusty-yellow {
+    background-color: var(--dusty-yellow) !important;
 }
 
 .bg-rusty-orange {
-    color: var(--rusty-orange) !important;
+    background-color: var(--rusty-orange) !important;
 }
 
 .bg-pine-green {
-    color: var(--pine-green) !important;
+    background-color: var(--pine-green) !important;
 }
 
 .bg-dark-green {
-    color: var(--dark-green) !important;
+    background-color: var(--dark-green) !important;
 }
 
 .bg-dark-grey {
-    color: var(--dark-grey) !important;
+    background-color: var(--dark-grey) !important;
+}
+
+.bg-dark-purple {
+    background-color: var(--dark-purple) !important;
 }
 
 .text-light-green {
     color: var(--light-green) !important;
+}
+
+.text-dusty-yellow {
+    color: var(--dusty-yellow) !important;
 }
 
 .text-rusty-orange {
@@ -48,4 +63,8 @@
 
 .text-dark-grey {
     color: var(--dark-grey) !important;
+}
+
+.text-dark-purple {
+    background-color: var(--dark-purple) !important;
 }
