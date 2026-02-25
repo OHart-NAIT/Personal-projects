@@ -29,23 +29,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
         defer></script>
-
-
-
-
 </head>
 
 
 <!-- We are using flexbox here to make sure the website fills the viewport. -->
 
-<body class="text-center min-vh-100 d-flex flex-column justify-content-between bg-secondary">
-    <header>
+<body class="text-center min-vh-100 d-flex flex-column justify-content-between bg-dusty-blue">
+        <header>
         <!-- We're going to straight up copy and paste a template from a Bootstrap example and modify it to make it our own.-->
-        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark-grey">
             <div class="container">
                 <div class="d-flex w-100 flex-column flex-xl-row align-items-center">
                     <!-- Brand / Logo - Centered on mobile, left on desktop -->
-                    <h1 class="text-white-50 mb-2 mb-xl-0">Oliver Hart - Projects</h1>
+                    <h1 class="text-light-yellow mb-2 mb-xl-0">Oliver Hart - Projects</h1>
 
                     <!-- Hamburger Button - Positioned absolutely or with flex order -->
                     <button class="navbar-toggler position-absolute end-0 me-3" type="button" data-bs-toggle="collapse"
@@ -57,20 +53,19 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-xl-auto mb-2 mb-xl-0 text-center">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html"><i class="bi bi-house px-2"></i>Home</a>
+                                <a class="nav-link text-light-green" href="index.html"><i class="bi bi-house px-2"></i>Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about.html"><i class="bi bi-person px-2"></i>About</a>
+                                <a class="nav-link text-light-green" href="about.html"><i class="bi bi-person px-2"></i>About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="resume.html"><i class="bi bi-briefcase px-2"></i>Resume</a>
+                                <a class="nav-link text-light-green" href="resume.html"><i class="bi bi-briefcase px-2"></i>Resume</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="projects.html"><i
-                                        class="bi bi-code-square px-2"></i>Projects</a>
+                                <a class="nav-link text-light-green" href="projects.html"><i class="bi bi-code-square px-2"></i>Projects</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html"><i class="bi bi-envelope px-2"></i>Contacts</a>
+                                <a class="nav-link text-light-green" href="contact.html"><i class="bi bi-envelope px-2"></i>Contacts</a>
                             </li>
                         </ul>
                     </div>
@@ -82,21 +77,21 @@
     <main>
         <div class="container py-4">
 
-            <div class="card bg-dark text-white-50 w-100 w-md-75 w-lg-50 mx-auto border-0 shadow-lg">
+            <div class="card bg-dark-grey text-white-50 w-100 w-md-75 w-lg-50 mx-auto border-0 shadow-lg">
                 <div class="row g-0">
                     <!-- Content - Left side -->
                     <div class="col-md-12 d-flex">
                         <div class="card-body text-start p-4 p-xl-5 d-flex flex-column" style="min-height: 600px;">
 
-                            <h2 class="card-title text-white display-4 fw-light mb-3">Projects</h2>
+                            <h2 class="card-title text-light-orange display-4 fw-light mb-3">Projects</h2>
 
-                            <div class="accent-line bg-success mb-4" style="width: 60px; height: 4px;"></div>
+                            <div class="accent-line bg-light-green mb-4" style="width: 60px; height: 4px;"></div>
 
 
                             <!-- Personal Projects -->
 
                             <span
-                                class="align-self-start d-inline-block bg-success bg-opacity-25 px-4 py-2 rounded-pill fs-4 mb-4 border border-success border-opacity-25">
+                                class="align-self-start d-inline-block bg-light-green bg-green-opacity-50 px-4 py-2 rounded-pill fs-4 mb-4 border border-success border-opacity-25">
                                 <i class="bi bi-brush me-2"></i>Personal Projects
                             </span>
 
@@ -106,7 +101,7 @@
                                 <!-- Card 1 -->
                                 <div class="col-md-4">
                                     <div
-                                        class="card bg-dark border border-success border-opacity-25 h-100 hover-lift transition-all">
+                                        class="card bg-blue-opacity-10 border border-success border-opacity-25 h-100 hover-lift transition-all">
                                         <!-- Placeholder Image at the top -->
                                         <img src="img/poke-park.png"
                                             class="card-img-top border-bottom border-success border-opacity-25"
@@ -114,11 +109,11 @@
 
                                         <div class="card-body p-3 d-flex flex-column">
                                             <div class="d-flex justify-content-between align-items-start mb-2">
-                                                <h2 class="card-title text-white fw-semibold mb-0 fs-6">Pok&eacute;-Park
+                                                <h2 class="card-title text-light-orange fw-semibold mb-0 fs-6">Pok&eacute;-Park
                                                 </h2>
                                             </div>
 
-                                            <p class="card-text small text-white-50 mb-0">A personal project based on
+                                            <p class="card-text small text-light-yellow text-opacity-75 mb-0">A personal project based on
                                                 virtual pet browser games, as a form to strengthen my understanding of APIs, and JavaScript. Users are able to create and view mockup cards of their Pok&eacute;mon, and their total park's stats.</p>
 
                                             <div class="mt-auto d-flex flex-wrap gap-3 pt-4 justify-content-center">
@@ -135,7 +130,7 @@
                                 <!-- Card 2 -->
                                 <div class="col-md-4">
                                     <div
-                                        class="card bg-dark border border-success border-opacity-25 h-100 hover-lift transition-all">
+                                        class="card bg-blue-opacity-10 border border-success border-opacity-25 h-100 hover-lift transition-all">
                                         <!-- Placeholder Image at the top -->
                                         <img src="img/pokemon-generator.png"
                                             class="card-img-top border-bottom border-success border-opacity-25"
@@ -143,11 +138,11 @@
 
                                         <div class="card-body p-3 d-flex flex-column">
                                             <div class="d-flex justify-content-between align-items-start mb-2">
-                                                <h2 class="card-title text-white fw-semibold mb-0 fs-6">Pok&eacute;mon
+                                                <h2 class="card-title text-light-orange fw-semibold mb-0 fs-6">Pok&eacute;mon
                                                     Generator</h2>
                                             </div>
 
-                                            <p class="card-text small text-white-50 mb-0">A personal project based on
+                                            <p class="card-text small text-light-yellow text-opacity-75 mb-0">A personal project based on
                                                 Pok&eacute;mon generator as a form to test my abilities and see how far
                                                 I can go with it. Allows users to generator 1-6 Pok&eacute;mon and
                                                 filter by regions/games, evolution level and how they want them to be
@@ -169,7 +164,7 @@
 
                             <!-- Academic Projects -->
                             <span
-                                class="align-self-start d-inline-block bg-success bg-opacity-25 px-4 py-2 rounded-pill fs-4 mb-4 border border-success border-opacity-25">
+                                class="align-self-start d-inline-block bg-light-green bg-green-opacity-50 px-4 py-2 rounded-pill fs-4 mb-4 border border-success border-opacity-25">
                                 <i class="bi bi-mortarboard me-2"></i>Academic Projects
                             </span>
 
@@ -177,7 +172,7 @@
                                 <!-- Card 1 -->
                                 <div class="col-md-4">
                                     <div
-                                        class="card bg-dark border border-success border-opacity-25 h-100 hover-lift transition-all">
+                                        class="card bg-blue-opacity-10 border border-success border-opacity-25 h-100 hover-lift transition-all">
                                         <!-- Placeholder Image at the top -->
                                         <img src="img/album-creator.png"
                                             class="card-img-top border-bottom border-success border-opacity-25"
@@ -185,11 +180,11 @@
 
                                         <div class="card-body p-3 d-flex flex-column">
                                             <div class="d-flex justify-content-between align-items-start mb-2">
-                                                <h2 class="card-title text-white fw-semibold mb-0 fs-6">Album Creator
+                                                <h2 class="card-title text-light-orange fw-semibold mb-0 fs-6">Album Creator
                                                 </h2>
                                             </div>
 
-                                            <p class="card-text small text-white-50 mb-0">A node-based academic assignment using JavaScript code to process user input and modify a web page programmatically. Allows users to create numerous mockup "playlists" for music, save them and log in later to view them.</p>
+                                            <p class="card-text small text-light-yellow text-opacity-75 mb-0">A node-based academic assignment using JavaScript code to process user input and modify a web page programmatically. Allows users to create numerous mockup "playlists" for music, save them and log in later to view them.</p>
 
                                             <div class="mt-auto d-flex flex-wrap gap-3 pt-4 justify-content-center">
                                                 <a href="#"
@@ -205,7 +200,7 @@
                                 <!-- Card 2 -->
                                 <div class="col-md-4">
                                     <div
-                                        class="card bg-dark border border-success border-opacity-25 h-100 hover-lift transition-all">
+                                        class="card bg-blue-opacity-10 border border-success border-opacity-25 h-100 hover-lift transition-all">
                                         <!-- Placeholder Image at the top -->
                                         <img src="img/album-database.png"
                                             class="card-img-top border-bottom border-success border-opacity-25"
@@ -213,11 +208,11 @@
 
                                         <div class="card-body p-3 d-flex flex-column">
                                             <div class="d-flex justify-content-between align-items-start mb-2">
-                                                <h2 class="card-title text-white fw-semibold mb-0 fs-6">Album Database
+                                                <h2 class="card-title text-light-orange fw-semibold mb-0 fs-6">Album Database
                                                 </h2>
                                             </div>
 
-                                            <p class="card-text small text-white-50 mb-0">A academic assignment using a JSON file that contains album records that can be "cached" for use on the page with the expection of code being able to load and manage the data. Allows users to provide various combinations of inputs and filter the albums the input is based on.</p>
+                                            <p class="card-text small text-light-yellow text-opacity-75 mb-0">A academic assignment using a JSON file that contains album records that can be "cached" for use on the page with the expection of code being able to load and manage the data. Allows users to provide various combinations of inputs and filter the albums the input is based on.</p>
 
                                             <div class="mt-auto d-flex flex-wrap gap-3 pt-4 justify-content-center">
                                                 <a href="#"
@@ -233,7 +228,7 @@
                                 <!-- Card 3 -->
                                  <div class="col-md-4">
                                     <div
-                                        class="card bg-dark border border-success border-opacity-25 h-100 hover-lift transition-all">
+                                        class="card bg-blue-opacity-10 border border-success border-opacity-25 h-100 hover-lift transition-all">
                                         <!-- Placeholder Image at the top -->
                                         <img src="img/van-homepage.png"
                                             class="card-img-top border-bottom border-success border-opacity-25"
@@ -241,11 +236,11 @@
 
                                         <div class="card-body p-3 d-flex flex-column">
                                             <div class="d-flex justify-content-between align-items-start mb-2">
-                                                <h2 class="card-title text-white fw-semibold mb-0 fs-6">Van Store
+                                                <h2 class="card-title text-light-orange fw-semibold mb-0 fs-6">Van Store
                                                 </h2>
                                             </div>
 
-                                            <p class="card-text small text-white-50 mb-0">An academic assignment focused on utilizing HTML and CSS to construct a mockup store page. The page displays products using card elements within scrollable wrappers and features a modal window that leads to a signup form for capturing user input, with content organized using accordion components.</p>
+                                            <p class="card-text small text-light-yellow text-opacity-75 mb-0">An academic assignment focused on utilizing HTML and CSS to construct a mockup store page. The page displays products using card elements within scrollable wrappers and features a modal window that leads to a signup form for capturing user input, with content organized using accordion components.</p>
 
                                             <div class="mt-auto d-flex flex-wrap gap-3 pt-4 justify-content-center">
                                                 <a href="#"
@@ -267,12 +262,12 @@
         </div>
     </main>
 
-    <footer class="bg-dark text-white-50 py-4">
+<footer class="bg-dark-grey text-light-orange py-4">
         <div class="container">
             <div class="d-flex flex-column align-items-center text-center">
                 <!-- Brand -->
                 <div class="mb-3">
-                    <h2 class="text-white mb-0">Oliver Hart</h2>
+                    <h3 class="text-light-yellow mb-0">Oliver Hart</h3>
                     <p class="mb-0">Copyright &copy;
                         <!-- To keep the year up to date. -->
                         <script>document.write(new Date().getFullYear())</script>
@@ -284,15 +279,14 @@
                     <!-- Top row - 3 items -->
                     <ul class="nav justify-content-center">
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link text-white-50 px-4"><i
-                                    class="bi bi-house px-2"></i>Home</a>
+                            <a href="index.html" class="nav-link text-light-green px-4"><i class="bi bi-house px-2"></i>Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="about.html" class="nav-link text-white-50 px-4"><i
+                            <a href="about.html" class="nav-link text-light-green px-4"><i
                                     class="bi bi-person px-2"></i>About</a>
                         </li>
                         <li class="nav-item">
-                            <a href="resume.html" class="nav-link text-white-50 px-4"><i
+                            <a href="resume.html" class="nav-link text-light-green px-4"><i
                                     class="bi bi-briefcase px-2"></i>Resume</a>
                         </li>
                     </ul>
@@ -300,11 +294,11 @@
                     <!-- Bottom row - 2 items -->
                     <ul class="nav justify-content-center">
                         <li class="nav-item">
-                            <a href="projects.html" class="nav-link text-white-50 px-3"><i
+                            <a href="projects.html" class="nav-link text-light-green  hover:text-light-orange px-3"><i
                                     class="bi bi-code-square px-2"></i>Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a href="contact.html" class="nav-link text-white-50 px-3"><i
+                            <a href="contact.html" class="nav-link text-light-green hover:text-light-orange px-3"><i
                                     class="bi bi-envelope px-2"></i>Contacts</a>
                         </li>
                     </ul>

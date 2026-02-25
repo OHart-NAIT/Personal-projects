@@ -1,70 +1,75 @@
 :root {
-    --light-green: #779e7f;
-    --dusty-yellow: #c08b57;
-    --rusty-orange: #b8520a;
-    --pine-green: #3A5A40;
-    --dark-green: #1D2E28;
-    --dark-grey: #212226;
-    --dark-purple:#332b36;
+    --light-green: #8cb369;
+    --light-yellow: #ffe1a8;
+    --dusty-blue: #abc2d7;
+    --light-orange: #F0864C;
+    --dark-grey: #2b2d42;
 
 }
 
 .nav-link:hover, .link-hover:hover, .icon-link-hover:hover {
-    color: white !important;
+    color: var(--dusty-blue) !important;
 }
 
+/* Backgtound colours */
 .bg-light-green {
     background-color: var(--light-green) !important;
 }
 
-.bg-dusty-yellow {
-    background-color: var(--dusty-yellow) !important;
+.bg-light-yellow {
+    background-color: var(--light-yellow) !important;
 }
 
-.bg-rusty-orange {
-    background-color: var(--rusty-orange) !important;
+.bg-dusty-blue {
+    background-color: var(--dusty-blue) !important;
 }
 
-.bg-pine-green {
-    background-color: var(--pine-green) !important;
-}
-
-.bg-dark-green {
-    background-color: var(--dark-green) !important;
+.bg-light-orange {
+    background-color: var(--light-orange) !important;
 }
 
 .bg-dark-grey {
     background-color: var(--dark-grey) !important;
 }
 
-.bg-dark-purple {
-    background-color: var(--dark-purple) !important;
-}
-
+/* Text colours */
 .text-light-green {
     color: var(--light-green) !important;
 }
 
-.text-dusty-yellow {
-    color: var(--dusty-yellow) !important;
+.text-light-yellow {
+    color: var(--light-yellow) !important;
 }
 
-.text-rusty-orange {
-    color: var(--rusty-orange) !important;
+.text-dusty-blue {
+    color: var(--dusty-blue) !important;
 }
 
-.text-pine-green {
-    color: var(--pine-green) !important;
+.text-light-orange {
+    color: var(--light-orange) !important;
 }
 
-.text-dark-green {
-    color: var(--dark-green) !important;
-}
 
 .text-dark-grey {
     color: var(--dark-grey) !important;
 }
 
-.text-dark-purple {
-    background-color: var(--dark-purple) !important;
+/* Outline */
+
+.btn-outline-success:hover {
+    color: #ffffff8f !important;
+    background-color: #8cb3698c !important;
+}
+
+/* Opacity */
+.bg-green-opacity-50 {
+    background-color: #8cb3698c !important;
+}
+
+.bg-blue-opacity-10 {
+    background-color: #abc2d725 !important;
+}
+
+.text-opacity-75 {
+    opacity: .75;
 }
