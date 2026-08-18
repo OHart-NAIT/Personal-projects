@@ -1,7 +1,11 @@
+import styles from "@/app/page.module.css";
+
 export default function Header() {
-    // This is a static component meaning it returns the same thing regardless of any data/props
     return (
-    <h1> Bingo Time! </h1>
-    )
+    // Maybe an image??
+    <header className={styles.header}>
+        <h1> Bingo Time! </h1> 
+    </header>
     
+    )   
 }

@@ -1,8 +1,11 @@
 .page {
-  --background: #c5a0a0;
-  --foreground: #fff;
+  --background: #ebf1e2;
+  --foreground: #ebf1e2;
 
-  --text-primary: #000;
+  --header: #3B413C;
+  --header-text:#778DC9;
+
+  --text-primary: #88AC72;
   --text-secondary: #666;
 
   --button-primary-hover: #383838;
@@ -16,6 +19,7 @@
   justify-content: center;
   font-family: var(--font-geist-sans);
   background-color: var(--background);
+  color: var(--text-primary);
 }
 
 .main {
@@ -30,58 +34,14 @@
   padding: 120px 60px;
 }
 
-.intro {
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  gap: 24px;
-}
-
-.intro h1 {
-  max-width: 320px;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 48px;
-  letter-spacing: -2.4px;
-  text-wrap: balance;
-  color: var(--text-primary);
-}
-
-.intro p {
-  max-width: 440px;
-  font-size: 18px;
-  line-height: 32px;
-  text-wrap: balance;
-  color: var(--text-secondary);
-}
-
-.intro a {
-  font-weight: 500;
-  color: var(--text-primary);
-}
-
-.ctas {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 440px;
-  gap: 16px;
-  font-size: 14px;
-}
-
-.ctas a {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  height: 40px;
-  padding: 0 16px;
-  border-radius: 128px;
-  border: 1px solid transparent;
-  transition: 0.2s;
-  cursor: pointer;
-  width: fit-content;
-  font-weight: 500;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 60px;
+  background-color: var(--header);
+  color: var(--header-text)
 }
 
 a.primary {
@@ -111,16 +71,6 @@ a.secondary {
   .main {
     padding: 48px 24px;
   }
-
-  .intro {
-    gap: 16px;
-  }
-
-  .intro h1 {
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: -1.92px;
-  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -129,15 +79,19 @@ a.secondary {
   }
 
   .page {
-    --background: #000;
-    --foreground: #000;
+    --background: #272932;
+    --foreground: #272932;
 
-    --text-primary: #ededed;
+    --header: #151619;
+    --header-text:#778DC9;
+
+    --text-primary: #b7b7b7;
     --text-secondary: #999;
 
     --button-primary-hover: #ccc;
     --button-secondary-hover: #1a1a1a;
     --button-secondary-border: #1a1a1a;
+    
   }
 }
 
